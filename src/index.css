@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #888;
+}
+.showcase {
+  object-fit: cover;
+  background: url("https://www.logolynx.com/images/logolynx/03/031698fd233ab791c3d392805c48a654.jpeg")
+    no-repeat right/cover;
+  height: 500px;
+}
+.showcase .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-main {
+  font-weight: 500;
+  color: #ccc;
+  background-color: #333;
+}
+.article {
+  margin: 1rem 1rem;
+  border: 1px solid #000;
+  background-color: #ddd;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 800px) {
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
